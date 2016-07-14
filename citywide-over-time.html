@@ -31,7 +31,7 @@ permalink: /citywide-over-time/
 
       <!-- Indicator Heading (chart title) -->
       {% for row in category.items %}
-        <h2 id="{{ row.Indicator | slugify }}" class="chart-section">{{ row.Indicator }}
+        <h2 id="{{ row.Indicator | slugify }}" class="chart-section">{{ row.Indicator | replace: "<", "&lt;" }}
           <a href="#{{ row.Indicator | slugify }}" class="header-link"><i class="fa fa-link"></i></a>
         </h2>
 
@@ -49,7 +49,7 @@ permalink: /citywide-over-time/
             <aside class="related plm-mu">
             <!-- Description of indicator & comments -->
               {% if row.description %}<span class="source"><strong>Description: </strong></span><br>
-                <p class="description">{{ row.description }}</p>{% endif %}
+                <p class="description">{{ row.description | replace: "<", "&lt;" }}</p>{% endif %}
               {% if row.chartComment %}<span class="source"><strong>Note: </strong></span><br>
                 <p class="source">{{ row.chartComment }}</p>{% endif %}
                 <!-- Data source(s) -->
