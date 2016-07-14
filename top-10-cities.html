@@ -4,7 +4,7 @@ title: Top 10 Cities
 permalink: /top-10-cities/
 ---
 
-<div class="row chart-section">
+<div class="row">
   <div class="medium-24 column">
 
     <!-- Loop through Indicators and group by Category -->
@@ -30,7 +30,7 @@ permalink: /top-10-cities/
 
       <!-- Indicator Heading (chart title) -->
       {% for row in category.items %}
-      <h2 id="{{ row.Indicator | slugify }}" class="chart-section">{{ row.Indicator }}
+      <h2 id="{{ row.Indicator | slugify }}" class="chart-section">{{ row.Indicator | replace: "<", "&lt;" }}
         <a href="#{{ row.Indicator | slugify }}" class="header-link"><i class="fa fa-link"></i></a>
       </h2>
 
