@@ -60,7 +60,7 @@ permalink: /planning-districts/
                   </h1>
                   <h3 class="h2">{{ row.Indicator }}</h3><br>
                   {% if row.description %}<span class="source"><strong>Description: </strong></span>
-				  <span class="description">{{ row.description | markdownify }}</span></p>{% endif %}
+          <div class="description">{{ row.description | markdownify }}</div>{% endif %}
                   {% if row.chartComment %}<p class="source"><strong>Note: </strong><br>{{ row.chartComment }}</p>{% endif %}
                   {% if row.dataSource %}<p class="source"><strong>Source: </strong><br>
                     {{ row.dataSource }} {% if row.dataSourceYear %}| {{ row.dataSourceYear }}{% endif %}</p>
