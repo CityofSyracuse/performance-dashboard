@@ -77,7 +77,7 @@ g.ct-label {
   margin-right: 20px;
 }
 .description {
-  /*margin-top: 10px;*/
+  word-wrap: break-word;
 }
 .top {
   border-bottom: 1px dotted #a1a1a1;
