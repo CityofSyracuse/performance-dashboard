@@ -35,6 +35,10 @@ g.ct-label {
   display: inline-block;
 }
 
+aside.related{
+  border-left: 5px solid #cfcfcf;
+}
+
 .district-selector, .category-selector {
   padding-left: 0px;
   background-color: white;
@@ -232,4 +236,12 @@ Bars are also strokes so you have maximum freedom in styling them. */
   display: none;
 }
 a.button.icon {
-    width: 220px;
+  width: 220px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  aside.related {
+    border-left: none;
+    border-top: 5px solid #cfcfcf;
+  }
+}
