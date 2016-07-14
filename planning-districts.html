@@ -47,7 +47,6 @@ permalink: /planning-districts/
           </div>
           <div class="row equal-height">
             {% for row in category.items %}
-            <!--@timwis: can't seem to get the line below to only append the class `end` for the last row in a category-->
             <div class="medium-8 small-12 column{% if row.Indicator | last %} end{% endif %}{% if row.Central ==  %} hidden{% endif %}" id="card-{{ row.Indicator | slugify }}">
               <div class="card equal">
                 <div class="content-block">
