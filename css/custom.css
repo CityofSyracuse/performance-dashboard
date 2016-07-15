@@ -2,6 +2,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin:0; padding:0;
 }
+#site-wide-alert{
+  margin-bottom:0;
+}
 #map {
   height: 100%;
   left: -20px;
@@ -243,5 +246,11 @@ a.button.icon {
   aside.related {
     border-left: none;
     border-top: 5px solid #cfcfcf;
+  }
+}
+
+@media screen and (max-width: 63.9375em) and (min-width: 40em) {
+  .app .page-title-container {
+      max-width: 100%;
   }
 }
