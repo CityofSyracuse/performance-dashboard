@@ -1,4 +1,4 @@
-## About the Community Health Assessment
+## About the Performance Management Dashboard
 
 The CHA is a systematic assessment of population health in Philadelphia, highlighting key public health challenges and assets and informing local public health programs, policies, and partnerships. The CHA includes indicators reflecting health behaviors, health conditions, health care factors, and social and environmental determinants of health.
 
